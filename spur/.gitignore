@@ -1,0 +1,67 @@
+# Environment variables (NEVER commit these!)
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Build artifacts
+out/
+cache/
+cache_forge/
+
+# Broadcast logs (contains transaction data)
+broadcast/
+
+# Dependencies
+node_modules/
+lib/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+lcov.info
+
+# Temporary folders
+tmp/
+temp/
+
+# Foundry specific
+artifacts/
+
+# Deployment artifacts (might contain sensitive info)
+deployments/
+deployment.json
+
+# Private keys and sensitive data
+*.key
+*.pem
+private/
+secrets/
