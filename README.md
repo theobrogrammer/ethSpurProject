@@ -1,10 +1,5 @@
-# SimpleToken – Foundry Starter Project
+# SPUR – Foundry Starter Project
 
-Hey team! 👋 Guillaume here. I hacked together this little Foundry repo so **none of you have to stumble through the tooling like I did**. Follow this README top‑to‑bottom and you’ll be minting our very own ERC‑20 on a testnet in no time.
-
----
-
-## What’s in the box?
 
 | File | What it does |
 |------|--------------|
