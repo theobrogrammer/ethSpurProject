@@ -26,8 +26,8 @@ No prior Solidity or blockchain wizardry required—promise.
 ## Clone & build
 
 ```bash
-git clone <YOUR-FORK-URL> simple-token
-cd simple-token
+git clone <URL> 
+cd spur
 
 # pull OpenZeppelin + forge-std
 forge install
@@ -36,7 +36,7 @@ forge install
 forge build
 ```
 
-You should see “Compiler run successful!”—if not, ping me on Discord.
+You should see “Compiler run successful!”
 
 ---
 
@@ -56,7 +56,7 @@ If something fails, it probably means you changed the token name/symbol without 
 
 ---
 
-## Deploy to Sepolia (or any testnet)
+## Deploy to Sepolia (or any testnet) important infos are already in `.env` file !!!
 
 1. **Add secrets** – create a `.env` file:
 
