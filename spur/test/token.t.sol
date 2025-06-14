@@ -17,14 +17,14 @@ contract TestSpurToken is Test {
         token = new SpurToken();
     }
 
-    function testBasicInfo() public {
+    function testBasicInfo() public view {
         // Check token name and symbol
         assertEq(token.name(), "Spur Token");
         assertEq(token.symbol(), "SPUR");
         assertEq(token.decimals(), 18);
     }
 
-    function testInitialSupply() public {
+    function testInitialSupply() public view {
         // Check total supply is 1 million tokens
         assertEq(token.totalSupply(), 1000000 * 10**18);
         // Check owner has all tokens
@@ -37,6 +37,7 @@ contract TestSpurToken is Test {
         token.transfer(user1, amount);
         
         // Check balances
+        // Owner balance before the transfer is 100000 * 10**18, for more info go look at spur/src/token.sol
         assertEq(token.balanceOf(user1), amount);
         assertEq(token.balanceOf(owner), 1000000 * 10**18 - amount);
     }

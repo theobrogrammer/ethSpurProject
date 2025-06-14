@@ -7,6 +7,7 @@ contract SpurToken is ERC20 {
     // Constructor runs once when contract is deployed
     constructor() ERC20("Spur Token", "SPUR") {
         // Mint 1 million tokens to whoever deploys the contract
+        // msg.sender = the address who called the function
         _mint(msg.sender, 1000000 * 10**18);
     }
 }
