@@ -3,7 +3,7 @@ pragma solidity ^0.8.23;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract SimpleToken is ERC20 {
+contract SpurToken is ERC20 {
     // Constructor runs once when contract is deployed
     constructor() ERC20("Spur Token", "SPUR") {
         // Mint 1 million tokens to whoever deploys the contract

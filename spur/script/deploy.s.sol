@@ -17,7 +17,7 @@ contract DeploySimple is Script {
         vm.startBroadcast(deployerPrivateKey);
         
         // Deploy the token
-        SimpleToken token = new SimpleToken();
+        SpurToken token = new SpurToken();
         
         // Stop recording
         vm.stopBroadcast();

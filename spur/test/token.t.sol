@@ -4,8 +4,8 @@ pragma solidity ^0.8.23;
 import "@forge-std/Test.sol";
 import "../src/token.sol";
 
-contract SimpleTokenTest is Test {
-    SimpleToken public token;
+contract TestSpurToken is Test {
+    SpurToken public token;
     address public owner;
     address public user1;
 
@@ -14,13 +14,13 @@ contract SimpleTokenTest is Test {
         user1 = makeAddr("user1");
         
         // Deploy the token
-        token = new SimpleToken();
+        token = new SpurToken();
     }
 
     function testBasicInfo() public {
         // Check token name and symbol
-        assertEq(token.name(), "Simple Token");
-        assertEq(token.symbol(), "SIMPLE");
+        assertEq(token.name(), "Spur Token");
+        assertEq(token.symbol(), "SPUR");
         assertEq(token.decimals(), 18);
     }
 
